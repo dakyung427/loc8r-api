@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      // 상단에 이름과 학번 추가
+      h1 2023810046 이다경
+      hr
+      h2= title
+  .row
+    .col-12.col-lg-8
+      p !{(content).replace(/\n/g, '<br/>')}
