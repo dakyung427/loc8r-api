@@ -4,7 +4,7 @@ const apiOptions = {
   server: 'http://localhost:3000'
 };
 if(process.env.NODE_ENV === 'production'){
-  apiOptions.server  = 'https://YOUR_API.onrender.com';
+  apiOptions.server  = 'https://loc8r-api-d5v7.onrender.com';
 }
 
 const homelist = (req, res) => {
@@ -109,6 +109,7 @@ const renderReviewForm = (req, res, {name}) => {
     error: req.query.err
   });
 };
+
 
 const getLocationInfo =(req,res,callback) => {
   const path = `/api/locations/${req.params.locationid}`;
