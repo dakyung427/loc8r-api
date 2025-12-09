@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, 'app_public', 'build/browser')));
 app.use(passport.initialize());
 
 // 라우터
-app.use('/', indexRouter); ///////////////////얘추가햇음 이상하면지우기
+
 app.use('/users', usersRouter);
 app.use('/api', apiRouter);
 
